@@ -1,0 +1,40 @@
+:root{
+    --main-bg-image:linear-gradient(to right,skyblue,violet);
+    --main-bg-color:gray;
+}
+.name{
+    text-align: center;
+    background-image:var(--main-bg-image);
+    font-size: large;
+}
+.cart{
+    
+    margin: 1vw auto;
+    
+}
+
+
+.cards{
+    display: flex;
+    overflow: hidden;
+    background-image:var(--main-bg-image);
+    margin: 1vw auto;
+    width: 90vw;
+}
+.cart-items {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cart-items img{
+    /* width: 20vw;
+    height: 20vw; */
+    margin: 1vw 4vw;
+   
+}
+.cart-items img:hover{
+    /* width: 30vw;
+    height: 25vw; */
+    margin: 1vw 4vw;
+    box-shadow: 3px 3px black, -1em 0 .4em black;
+}

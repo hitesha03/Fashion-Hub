@@ -1,0 +1,25 @@
+.flex-all-center{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 0 1vh;
+    background-image: var(--main-bg-image);
+    border: 1px black solid;
+    border-radius: 1px;
+}
+.btn :hover{
+    padding: 0 2vh;
+    width: 4vw;
+    height: 5vh;
+}
+.my-2{
+    margin: 1vw 0;
+    padding: 1vh;
+
+}
+.text-center{
+    text-align: center;
+}

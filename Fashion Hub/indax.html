@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/utiliti.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo1.png" alt="logo1">
+            </div>
+            <ul>
+                <li><a href="indax.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="">
+                <button class="btn"><img src="s1.png" alt="search"></button>
+            </div>
+            <div class="login">
+
+                <a href="login.html"><button class="btn"><img src="si.png" alt="search"></button></a>
+            </div>
+
+
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="silder">
+                <!-- <video  class= "mySlides"src="img/silde/Instagram/VID_381231001_163500_377.mp4" controls="autoplay" width="500vw" height="550vh"></video> -->
+               
+                <img class="mySlides" src="img/silde/silde1.jpg">
+                <img class="mySlides" src="img/silde/silde2.jpg">
+                <img class="mySlides" src="img/silde/silde3.jpg" alt="shooping">
+                <img class="mySlides" src="img/silde/silde4.jpg">
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+            <!-- <div class="silder">
+    <img src="img/silde/silde3.jpg"alt="shooping">
+</div> -->
+            <div class="card">
+                <div class="card-items">
+                    <a href="tops.html"><img src="img/top/top10.jpg" alt=""></a>
+                    <div class="lines">
+                        <p class="text-center" my-2> Tops</p>
+
+                    </div>
+                </div>
+                <div class="card-items">
+                    <a href="dress.html"><img src="img/dress/d10.jpg" alt=""></a>
+                    <div class="lines">
+                        <p class="text-center" my-2> Dresses</p>
+
+                    </div>
+                </div>
+                <div class="card-items">
+                    <a href="jeans.html"> <img src="img/jeans/jeans(4).jpg" alt=""></a>
+                    <div class="lines">
+                        <p class="text-center" my-2> Jeans</p>
+
+                    </div>
+                </div>
+                <div class="card-items">
+                    <a href="kids.html"><img src="img/kids/download.jpg" alt=""></a>
+                    <div class="lines">
+                        <p class="text-center" my-2> Kidswere</p>
+
+                    </div>
+                </div>
+                <div class="card-items">
+                    <a href="kurti.html"><img src="img/kurti/k10.jpg" alt=""></a>
+                    <div class="lines">
+                        <p class="text-center" my-2> Kurti</p>
+
+                    </div>
+                </div>
+                <div class="card-items">
+                    <a href="saree.html"> <img src="img/saree/s5.jpg" alt=""></a>
+                    <div class="lines">
+                        <p class="text-center" my-2> Saree</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <h2 class="my-2">Tops and tunics</h2>
+                <div class="cards">
+
+                    <div class="cart-items">
+                        <img src="img/top/top1.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center" my-2>Denim Tops</p>
+                            <p class="text-center" my-2>min 40% off</p>
+                        </div>
+                    </div>
+                    <div class="cart-items">
+                        <img src="img/top/top2.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center" my-2>off sholder top</p>
+                            <p class="text-center" my-2>min 40% off</p>
+                        </div>
+                    </div>
+                    <div class="cart-items">
+                        <img src="img/top/top3.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center" my-2>Black crop top</p>
+                            <p class="text-center" my-2>min 60% off</p>
+                        </div>
+                    </div>
+                    <div class="cart-items">
+                        <img src="img/top/top9.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center" my-2>T shirts</p>
+                            <p class="text-center" my-2>min 50% off</p>
+                        </div>
+                    </div>
+                    <div class="cart-items">
+                        <img src="img/top/top5.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center" my-2>sweat top</p>
+                            <p class="text-center" my-2>min 40% off</p>
+                        </div>
+                    </div>
+                    <div class="cart-items">
+                        <img src="img/top/top6.jpg" alt="">
+                        <div class="lines">
+                            <p class="text-center" my-2>Casuals tops</p>
+                            <p class="text-center" my-2>min 40% off</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <h2 class="my-2">Dresses</h2>
+                    <div class="cards">
+
+                        <div class="cart-items">
+                            <img src="img/dress/d1.jpg" alt="">
+                            <div class="lines">
+                                <p class="text-center" my-2>Black Dresses</p>
+                                <p class="text-center" my-2>min 40% off</p>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <img src="img/dress/d2.jpg" alt="">
+                            <div class="lines">
+                                <p class="text-center" my-2>strips Dresses</p>
+                                <p class="text-center" my-2>min 40% off</p>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <img src="img/dress/d3.jpg" alt="">
+                            <div class="lines">
+                                <p class="text-center" my-2>off sholder Dresses</p>
+                                <p class="text-center" my-2>min 40% off</p>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <img src="img/dress/d4.jpg" alt="">
+                            <div class="lines">
+                                <p class="text-center" my-2> partywere Dresses</p>
+                                <p class="text-center" my-2>min 40% off</p>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <img src="img/dress/d5.jpg" alt="">
+                            <div class="lines">
+                                <p class="text-center" my-2>White Dresses</p>
+                                <p class="text-center" my-2>min 40% off</p>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <img src="img/dress/d6.jpg" alt="">
+                            <div class="lines">
+                                <p class="text-center" my-2>Wedding Dresses</p>
+                                <p class="text-center" my-2>min 40% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <h2 class="my-2">Jeans</h2>
+                        <div class="cards">
+
+                            <div class="cart-items">
+                                <img src="img/jeans/jeans(1).jpg" alt="">
+                                <div class="lines">
+                                    <p class="text-center" my-2></p>
+                                    <p class="text-center" my-2>min 40% off</p>
+                                </div>
+                            </div>
+                            <div class="cart-items">
+                                <img src="img/jeans/jeans(2).jpg" alt="">
+                                <div class="lines">
+                                    <p class="text-center" my-2> </p>
+                                    <p class="text-center" my-2>min 40% off</p>
+                                </div>
+                            </div>
+                            <div class="cart-items">
+                                <img src="img/jeans/jeans(3).jpg" alt="">
+                                <div class="lines">
+                                    <p class="text-center" my-2></p>
+                                    <p class="text-center" my-2>min 40% off</p>
+                                </div>
+                            </div>
+
+
+                            <div class="cart-items">
+                                <img src="img/jeans/jeans(4).jpg" alt="">
+                                <div class="lines">
+                                    <p class="text-center" my-2></p>
+                                    <p class="text-center" my-2>min 40% off</p>
+                                </div>
+                            </div>
+                            <div class="cart-items">
+                                <img src="img/jeans/jeans(5).jpg" alt="">
+                                <div class="lines">
+                                    <p class="text-center" my-2></p>
+                                    <p class="text-center" my-2>min 40% off</p>
+                                </div>
+                            </div>
+                            <div class="cart-items">
+                                <img src="img/jeans/jeans(6).jpg" alt="">
+                                <div class="lines">
+                                    <p class="text-center" my-2></p>
+                                    <p class="text-center" my-2>min 40% off</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <h2 class="my-2">kids Dresses</h2>
+                            <div class="cards">
+
+                                <div class="cart-items">
+                                    <img src="img/kids/download (1).jpg" alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src="img/kids/download (2).jpg" alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src="img/kids/download (3).jpg" alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="cart-items">
+                                    <img src="img/kids/download (4).jpg" alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src="img/kids/download (5).jpg" alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src="img/kids/download(6).jpg" alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <h2 class="my-2">Kurti</h2>
+                            </div>
+                            <div class="cards">
+
+                                <div class="cart-items">
+                                    <img src=img/kurti/k1.jpg alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2>min 40% off</p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src=img/kurti/k2.jpg alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src=img/kurti/k3.jpg alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src=img/kurti/k4.jpg alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src=img/kurti/k5.jpg alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                                <div class="cart-items">
+                                    <img src=img/kurti/k6.jpg alt="">
+                                    <div class="lines">
+                                        <p class="text-center" my-2></p>
+                                        <p class="text-center" my-2></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <h2 class="my-2">Sarees</h2>
+                                <div class="cards">
+
+                                    <div class="cart-items">
+                                        <img src="img/saree/s1.jpg" alt="">
+                                        <div class="lines">
+                                            <p class="text-center" my-2>Partyware saree</p>
+                                            <p class="text-center" my-2>min 70% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-items">
+                                        <img src="img/saree/s2.jpg" alt="">
+                                        <div class="lines">
+                                            <p class="text-center" my-2>sliks sarees</p>
+                                            <p class="text-center" my-2>min 40% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-items">
+                                        <img src="img/saree/s4.jpg" alt="">
+                                        <div class="lines">
+                                            <p class="text-center" my-2>Partyware sarees</p>
+                                            <p class="text-center" my-2>min 40% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-items">
+                                        <img src="img/saree/s5.jpg" alt="">
+                                        <div class="lines">
+                                            <p class="text-center" my-2>Indian Wedding saree</p>
+                                            <p class="text-center" my-2>min 40% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-items">
+                                        <img src="img/saree/s3.jpg" alt="">
+                                        <div class="lines">
+                                            <p class="text-center" my-2>Kanjivernam sarees</p>
+                                            <p class="text-center" my-2>min 40% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-items">
+                                        <img src="img/saree/s6.jpg" alt="">
+                                        <div class="lines">
+                                            <p class="text-center" my-2>Woven Border Chiffon Saree
+                                            </p>
+                                            <p class="text-center" my-2>min 40% off</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+    </main>
+
+    <footer class="flex-all-center">
+        <p>copyrite &copy; Fashion Hub</p>
+    </footer>
+
+
+
+</body>
+
+</html>
